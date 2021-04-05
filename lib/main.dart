@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget> [
                 CircleAvatar(
                   radius: 50.0,
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "SOFTWARE DEVELOPER",
+                  "FULL-STACK WEB DEVELOPER",
                   style: TextStyle(
                     fontSize: 20.0,
                     color: Colors.teal[100],
@@ -39,77 +40,75 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold
                   ),
                 ),
-                Card(
-                  color: Colors.white,
-                  margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  child: Row(
-                   children: <Widget>[
-                     Icon(
-                       Icons.phone,
-                       color: Colors.teal,
-                       size: 20.0,
-                     ),
-                     SizedBox(
-                       width: 10.0,
-                     ),
-                     Text(
-                         '+254 717 255 460',
-                       style: TextStyle(
-                         color: Colors.teal[900],
-                         fontFamily: 'SourceSansPro',
-                         fontSize: 20.0,
-
-                       ),
-                     ),
-                   ],
+                SizedBox(
+                  height: 20.0,
+                  width: 150.0,
+                  child: Divider(
+                    color: Colors.teal.shade100,
                   ),
                 ),
                 Card(
-                  color: Colors.white,
                   margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  child: Row(
-                    children: <Widget>[
-                        Icon(
-                            Icons.email,
-                          color: Colors.teal,
-                          size: 20.0,
-                        ),
-                      SizedBox(
-                        width: 10.0,
+                  child: Padding(
+                    padding: const EdgeInsets.all(0.1),
+                    child: ListTile(
+                      leading: Icon(
+                        Icons.phone,
+                        color: Colors.teal,
+                        size: 20.0,
                       ),
-                      Text(
-                          'wilsonkinyuam@gmail.com',
+                      title: Text(
+                        '+254 717 255 460',
                         style: TextStyle(
-                          color: Colors.teal.shade900,
+                          color: Colors.teal[900],
+                          fontFamily: 'SourceSansPro',
                           fontSize: 20.0,
-                          fontFamily: 'SourceSansPro'
+
                         ),
                       ),
-                    ],
+                    ),
                   ),
                 ),
                 Card(
-                  color: Colors.white,
                   margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  child: Row(
-                      children: <Widget>[
-                        Icon(
-                          Icons.language,
-                          color: Colors.teal,
-                          size: 20.0,
-                        ),
-                        SizedBox(
-                          width: 10.0,
-                        ),
-                        Text(
-                            "https://developerwilson.com",
-                          style: TextStyle(
+                  child: Padding(
+                    padding: const EdgeInsets.all(0.1),
+                    child: ListTile(
+                      leading: Icon(
+                        Icons.email,
+                        color: Colors.teal,
+                        size: 20.0,
+                      ),
+                      title: Text(
+                        'wilsonkinyuam@gmail.com',
+                        style: TextStyle(
                             color: Colors.teal.shade900,
                             fontSize: 20.0,
                             fontFamily: 'SourceSansPro'
-                          ),
                         ),
-                      ],
+                      ),
+                    ),
+                  ),
+                ),
+                Card(
+                  margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: Padding(
+                    padding: const EdgeInsets.all(0.1),
+                    child: ListTile(
+                      leading: Icon(
+                        Icons.language,
+                        color: Colors.teal,
+                        size: 20.0,
+                      ),
+                      title: Text(
+                        "www.developerwilson.com",
+                        style: TextStyle(
+                            color: Colors.teal.shade900,
+                            fontSize: 20.0,
+                            fontFamily: 'SourceSansPro'
+                        ),
+                      ),
+                    ),
                   ),
                 ),
               ],
