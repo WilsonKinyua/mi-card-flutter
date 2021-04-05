@@ -11,28 +11,32 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Container(
-            child: Row (
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Container(
-                  color: Colors.red,
-                  width: 100,
+          child: Column(
+              children: <Widget> [
+                CircleAvatar(
+                  radius: 50.0,
+                  backgroundImage: AssetImage('images/me.jpg'),
                 ),
-                Container(
-                  color: Colors.yellow,
-                  width: 100,
+                Text(
+                    'Wilson Kinyua',
+                    style: TextStyle(
+                    fontSize: 40.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                      fontFamily: 'Pacifico',
+                  ),
                 ),
-                Container(
-                  color: Colors.lightGreen,
-                  width: 100,
-                ),
-                Container(
-                  color: Colors.blue,
-                  width: 400,
+                Text(
+                  "SOFTWARE DEVELOPER",
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.teal[100],
+                    fontFamily: 'SourceSansPro',
+                    letterSpacing: 2.5,
+                    fontWeight: FontWeight.bold
+                  ),
                 ),
               ],
-            ),
           ),
         ),
       ),
